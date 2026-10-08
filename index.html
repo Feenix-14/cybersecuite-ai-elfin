@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CyberGuard AI — Intelligence within. Stronger Security.</title>
+<meta name="description" content="Explore AI and cybersecurity through interactive password and phishing awareness demos.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23091020'/%3E%3Cpath d='M16 5l10 4v8c0 6-10 11-10 11S6 23 6 17V9z' fill='none' stroke='%23c1a1ff' stroke-width='2'/%3E%3C/svg%3E">
+<!-- Bootstrap 5.3: responsive layout and components -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient-lights" aria-hidden="true"><span></span><span></span></div>
+<header>
+<nav class="navbar navbar-expand-lg wrap" aria-label="Main navigation">
+<a class="navbar-brand logo" href="#home"><img class="brand-image" src="assets/logo.png" alt="CyberGuard AI" width="260" height="87"></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon">
+</span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="mainNav">
+<div class="navbar-nav links">
+<a class="nav-link" href="#threats">AI &amp; security</a>
+<a class="nav-link" href="#cyber-twin">Cyber Twin</a>
+<a class="nav-link" href="#lab">Interactive lab</a>
+<a class="nav-link" href="#encryption">Encryption</a>
+<a class="nav-link" href="#tips">Safety tips</a>
+</div>
+</div>
+</nav>
+</header>
+<main class="wrap">
+<div class="hero" id="home">
+<div>
+<div class="tag">A smarter digital frontier</div>
+<h1>Intelligence<br>within.<br>
+<span>Threats<br>outside.</span>
+</h1>
+<p class="intro">Understand the threats. Recognise the warning signs. Discover how AI helps protect our digital world.</p>
+<div class="actions">
+<a class="btn" href="#cyber-twin">Explore Cyber Twin</a>
+<a class="btn secondary" href="#threats">Explore protection</a>
+</div>
+<p class="micro">AI awareness / Human judgement / Digital resilience</p>
+</div>
+<div class="hero-art"><canvas class="network-canvas" aria-hidden="true"></canvas><div class="orbit-frame" aria-hidden="true"></div><div class="art-caption"><span>NEURAL DEFENCE</span><span>01 / AI CONCEPT</span></div><img src="assets/ai-threat.png" alt="Purple neural processor surrounded by a scanning ring" width="1280" height="1280" fetchpriority="high"><div class="art-note"><span class="orb"></span>Pattern recognition. Human verification.</div></div></div>
+<div class="strip"><span class="strip-title">THE DEFENCE<br>PROTOCOL</span>
+<span>
+<strong>01</strong> &nbsp; Understand AI</span>
+<span>
+<strong>02</strong> &nbsp; Spot the risks</span>
+<span>
+<strong>03</strong> &nbsp; Build safer habits</span>
+</div>
+<section id="threats">
+<div class="section-head">
+<div>
+<div class="tag">The digital defence toolkit</div>
+<h2>See beyond the obvious.</h2>
+</div>
+<p>AI can find patterns across large amounts of data, helping security teams investigate threats faster.</p>
+</div>
+<div class="row g-4 cards">
+<div class="col-md-4">
+<article class="card h-100">
+<img class="feature-image" src="assets/ai-threat.png" alt="AI threat detection illustration" width="1280" height="1280" loading="lazy">
+<span class="number">01 / DETECT</span>
+<h3>AI threat detection</h3>
+<p>Unusual sign-ins or unexpected network activity can signal a problem. AI helps flag those patterns for investigation.</p>
+</article>
+</div>
+<div class="col-md-4">
+<article class="card h-100">
+<img class="feature-image" src="assets/phishing.png" alt="Envelope and magnifying glass representing phishing awareness" width="1280" height="1280" loading="lazy">
+<span class="number">02 / VERIFY</span>
+<h3>Phishing awareness</h3>
+<p>Scam messages often use urgency and impersonation. AI can flag suspicious content, but always verify the sender yourself.</p>
+</article>
+</div>
+<div class="col-md-4">
+<article class="card h-100">
+<img class="feature-image" src="assets/data-protection.png" alt="Shield and lock protecting a database" width="1280" height="1280" loading="lazy">
+<span class="number">03 / PROTECT</span>
+<h3>Data protection</h3>
+<p>Security tools can help identify sensitive information and unusual access. Strong permissions and encryption still matter.</p>
+</article>
+</div>
+</div>
+</section>
+</main>
+<div class="lab">
+<section class="wrap" id="lab">
+<div class="section-head">
+<div>
+<div class="tag">Hands-on learning</div>
+<h2>Enter the defence lab.</h2>
+</div>
+<p>Two small challenges. A better understanding of everyday digital safety.</p>
+</div>
+<div class="row g-4 labs">
+<div class="col-lg-6">
+<article class="lab-card h-100">
+<span class="lab-label">01 / PASSWORD CHECK</span>
+<h3>Test a practice password.</h3>
+<p>Demo only. Never enter your real password. This check runs in your browser and sends nothing anywhere.</p>
+<label for="password">Practice password</label>
+<div class="input-row">
+<input class="form-control" id="password" type="password" autocomplete="off" spellcheck="false" placeholder="Enter a made-up example">
+<button class="show" id="show" type="button" aria-pressed="false">Show</button>
+</div>
+<div class="meter progress" role="progressbar" aria-label="Practice password strength" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+<span class="progress-bar" id="bar">
+</span>
+</div>
+<div id="strength" aria-live="polite">Start typing to see the result.</div>
+<p id="hint">Long, unique passwords are a good starting point. A password manager can help.</p>
+<p>This is a simple rule-based estimate, not an AI model or a guarantee of safety.</p>
+</article>
+</div>
+<div class="col-lg-6">
+<article class="lab-card h-100">
+<span class="lab-label">02 / PHISHING CHALLENGE</span>
+<h3>Would you trust this?</h3>
+<p>Read the sample message and choose your response.</p>
+<div class="mail">
+<small>From: support@account-verify.example</small>
+<p>
+<strong>Your account will close in 10 minutes!</strong>
+<br>Reply with your password now to keep your account active.</p>
+</div>
+<div class="choices">
+<button class="btn secondary" id="trust">Trust the message</button>
+<button class="btn" id="flag">Flag as suspicious</button>
+</div>
+<p class="feedback" id="feedback" role="status">Look for urgency, an unfamiliar sender, and requests for secrets.</p>
+</article>
+</div>
+</div>
+</section>
+</div>
+
+<section class="wrap twin" id="cyber-twin">
+<div class="section-head"><div><div class="tag">CYBER TWIN / LEARN BY EXPLORING</div><h2>Small choices.<br>Real consequences.</h2></div><p>Explore everyday privacy risks and build your own safety plan. Educational simulations, powered by transparent rules—not live AI or a security scan.</p></div>
+<div class="twin-shell">
+<div class="twin-tabs" role="tablist" aria-label="Cyber Twin tools">
+<button role="tab" id="tab-qr" aria-controls="panel-qr" aria-selected="true" data-tool="qr">01 · QR traps</button>
+<button role="tab" id="tab-permissions" aria-controls="panel-permissions" aria-selected="false" tabindex="-1" data-tool="permissions">02 · Permissions</button>
+<button role="tab" id="tab-footprint" aria-controls="panel-footprint" aria-selected="false" tabindex="-1" data-tool="footprint">03 · Footprint</button>
+<button role="tab" id="tab-attack" aria-controls="panel-attack" aria-selected="false" tabindex="-1" data-tool="attack">04 · Attack path</button>
+<button role="tab" id="tab-plan" aria-controls="panel-plan" aria-selected="false" tabindex="-1" data-tool="plan">05 · Safety plan</button>
+</div>
+<div class="twin-panel" role="tabpanel" id="panel-qr" aria-labelledby="tab-qr">
+<div class="twin-grid"><div><span class="lab-label">PAUSE BEFORE YOU OPEN</span><h3>A QR code is just a link.</h3><p>Imagine a sticker on a parking payment sign. Inspect the sample destination before deciding what to do.</p><label for="qrScenario">Sample destination</label><select id="qrScenario" class="form-select"><option value="fake">Parking payment sticker</option><option value="menu">Restaurant menu card</option><option value="prize">Free prize poster</option></select><div class="sample-link" id="qrDestination"></div><div class="actions"><button class="btn" id="qrInspect">Inspect destination</button><button class="btn secondary" id="qrVerify">Verify another way</button></div></div><div class="twin-result" id="qrResult" role="status" aria-live="polite">Select a scenario and inspect its destination. Sample links never open.</div></div>
+</div>
+<div class="twin-panel" role="tabpanel" id="panel-permissions" aria-labelledby="tab-permissions" hidden>
+<div class="twin-grid"><div><span class="lab-label">PERMISSION DETECTIVE</span><h3>Does this app need that?</h3><label for="appType">App purpose</label><select class="form-select" id="appType"><option value="torch">Flashlight</option><option value="maps">Navigation</option><option value="video">Video calling</option></select><fieldset class="choice-grid"><legend>Permissions requested</legend><label><input type="checkbox" value="camera" checked> Camera</label><label><input type="checkbox" value="microphone"> Microphone</label><label><input type="checkbox" value="location"> Location</label><label><input type="checkbox" value="contacts" checked> Contacts</label><label><input type="checkbox" value="sms" checked> SMS</label></fieldset><button class="btn" id="permissionCheck">Review permissions</button></div><div class="twin-result" id="permissionResult" role="status" aria-live="polite">Choose the app’s purpose and its requested permissions. We compare them with a typical core function; optional features may need more access.</div></div>
+</div>
+<div class="twin-panel" role="tabpanel" id="panel-footprint" aria-labelledby="tab-footprint" hidden>
+<div class="twin-grid"><div><span class="lab-label">DIGITAL FOOTPRINT PUZZLE</span><h3>What can a stranger connect?</h3><p>Select details from a fictional public profile. No personal information is needed.</p><fieldset class="choice-grid" id="footprintChoices"><legend>Visible profile details</legend><label><input type="checkbox" value="birthday"> Full birthday</label><label><input type="checkbox" value="school"> College and full name</label><label><input type="checkbox" value="routine"> Daily route and times</label><label><input type="checkbox" value="travel"> Live holiday location</label><label><input type="checkbox" value="pet"> Pet’s name</label><label><input type="checkbox" value="email"> Personal email</label></fieldset><button class="btn" id="footprintCheck">Connect the clues</button></div><div class="twin-result" id="footprintResult" role="status" aria-live="polite">Combine details to reveal how public information can support impersonation, targeted messages, or exposure of your routine.</div></div>
+</div>
+<div class="twin-panel" role="tabpanel" id="panel-attack" aria-labelledby="tab-attack" hidden>
+<span class="lab-label">ATTACK-PATH SIMULATION</span><h3>Interrupt the chain.</h3><p>Follow one fictional phishing attempt. Choose a protective action to see where it can help.</p><label for="defenceChoice">Your protective action</label><select id="defenceChoice" class="form-select"><option value="none">No protective action in this example</option><option value="verify">Open the official app to verify</option><option value="passkey">Use a passkey instead of typing a password</option><option value="revoke">Revoke sessions after recognising the compromise</option></select><div class="attack-flow" id="attackFlow"><div>01<strong>Urgent message</strong><small>A fake account warning arrives.</small></div><div>02<strong>Imitation login</strong><small>The message leads to a false page.</small></div><div>03<strong>Credential theft</strong><small>A typed password is captured.</small></div><div>04<strong>Account misuse</strong><small>The attacker attempts access.</small></div></div><div class="actions"><button class="btn" id="runAttack">Run simulation</button><button class="btn secondary" id="resetAttack">Reset</button></div><p class="attack-status" id="attackStatus" role="status" aria-live="polite">Ready. This is one simplified scenario, not a prediction.</p>
+</div>
+<div class="twin-panel" role="tabpanel" id="panel-plan" aria-labelledby="tab-plan" hidden>
+<div class="twin-grid"><div><span class="lab-label">YOUR PERSONAL SAFETY PLAN</span><h3>Turn awareness into action.</h3><p>Select what you do online. Your checklist stays in this page and resets when you reload.</p><fieldset class="choice-grid" id="planChoices"><legend>Your online activities</legend><label><input type="checkbox" value="social" checked> Social media</label><label><input type="checkbox" value="payments"> Online payments</label><label><input type="checkbox" value="apps"> Install new apps</label><label><input type="checkbox" value="wifi"> Use public Wi-Fi</label><label><input type="checkbox" value="gaming"> Online gaming</label><label><input type="checkbox" value="work"> College or work accounts</label></fieldset><button class="btn" id="buildPlan">Build my checklist</button></div><div class="twin-result"><p id="planProgress" role="status" aria-live="polite">Build a plan to start.</p><div id="planList"></div></div></div>
+</div>
+</div></section>
+<section class="wrap" id="encryption"><div class="section-head"><div><div class="tag">03 / ENCRYPTION DEMO</div><h2>Same message.<br>A different alphabet.</h2></div><p>Explore the Caesar cipher: shift each letter by a fixed number of positions. This historical cipher is for learning, not protecting real information.</p></div><div class="lab-card cipher-panel"><div class="row g-4"><div class="col-lg-6"><label for="cipherInput">Your practice message</label><textarea class="form-control" id="cipherInput" rows="4" maxlength="2000" spellcheck="false">HELLO CYBERGUARD</textarea><label for="cipherShift">Letter shift: <span id="shiftValue">3</span></label><input class="form-range" id="cipherShift" type="range" min="1" max="25" value="3"><div class="actions"><button class="btn" id="encryptButton" type="button">Encrypt</button><button class="btn secondary" id="decryptButton" type="button">Decrypt</button><button class="btn secondary" id="cipherReset" type="button">Reset</button></div><p>Only English letters change. Capitals, spaces, numbers, and punctuation are preserved. Everything runs in your browser.</p></div><div class="col-lg-6"><span class="lab-label" id="cipherMode">ENCRYPTED MESSAGE</span><div class="cipher-output" id="cipherOutput" role="status" aria-live="polite"></div><div class="cipher-map" aria-label="Example letter mappings"><span id="mapA"></span><span id="mapB"></span><span id="mapZ"></span></div><p id="cipherExplanation"></p><button class="btn secondary" id="useCipherOutput" type="button">Use result as input</button><p class="micro">Try encrypting, then use the result as input and decrypt with the same shift.</p></div></div></div></section>
+<section class="wrap" id="tips">
+<div class="tag">Your everyday defence</div>
+<h2>Small habits. Strong protection.</h2>
+<div class="row g-4 tips">
+<div class="col-sm-6 col-lg-3">
+<article>
+<div class="tip-icon">01</div>
+<h3>Add a second layer</h3>
+<p>Enable two-factor authentication. Prefer an authenticator app or passkey when available.</p>
+</article>
+</div>
+<div class="col-sm-6 col-lg-3">
+<article>
+<div class="tip-icon">02</div>
+<h3>Keep software updated</h3>
+<p>Install updates for your phone, browser, and apps to fix known security weaknesses.</p>
+</article>
+</div>
+<div class="col-sm-6 col-lg-3">
+<article>
+<div class="tip-icon">03</div>
+<h3>Pause before you click</h3>
+<p>Check the actual website address. Open the official app directly when a message feels suspicious.</p>
+</article>
+</div>
+<div class="col-sm-6 col-lg-3">
+<article>
+<div class="tip-icon">04</div>
+<h3>Keep backups</h3>
+<p>Back up important files regularly and keep a separate copy protected from accidental changes.</p>
+</article>
+</div>
+</div>
+</section>
+<footer>
+<div class="wrap foot">
+<span class="logo">CyberGuard<span> AI</span>
+</span>
+<span>AI & Cybersecurity · Designed by Elfin Y</span>
+<span>Learn. Verify. Protect.</span>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+</script>
+<script src="script.js"></script>
+</body>
+</html>
